@@ -11,7 +11,7 @@ export default function Price() {
         .catch(error => console.error(error))
         }
         updatePrice()
-        const update = setInterval(() => updatePrice(), 10000)
+        const update = setInterval(() => updatePrice(), 15000)
         return () => {
             clearInterval(update)
         }
