@@ -5,7 +5,7 @@ export default function Price() {
 
     useEffect(() => {
         function updatePrice() {
-        fetch('https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd&_cg_demo_api_key=PPrs2bFiibp3jkG3QoRG987Z')
+        fetch('https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd&_cg_demo_api_key=CG-PPrs2bFiibp3jkG3QoRG987Z')
         .then(response => response.json())
         .then(json => setSolPrice(json))
         .catch(error => console.error(error))
